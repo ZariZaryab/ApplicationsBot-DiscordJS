@@ -38,8 +38,7 @@ fs.readdir('./COMMANDS/', (err, files) => {
     console.log(`[BOOT]: Verified all commands!`);
   }, 1000)
 })
-
-    // COMMANDS
+    /* COMMANDS */
 
   client.on("message", async message => {
 
@@ -52,7 +51,7 @@ fs.readdir('./COMMANDS/', (err, files) => {
   })
 
 
-   // BOOT STATS
+   /* BOOT STATS */
 
 client.on("ready", () => {
   console.log(`[LunicBoot]: Booted ${client.user.tag}!`)
