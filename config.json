@@ -1,0 +1,7 @@
+{
+"PREFIX": "+",
+"TOKEN": "INSERT-TOKEN-HERE",
+"REVIEWER_ID": "Reviewer Role Discord ID (Users with this role can accept/reject",
+"APPLY_CHANNEL": "Channel ID where users can apply",
+"LOG_CHANNEL": "Channel ID where applications will be saved/sent"
+}
