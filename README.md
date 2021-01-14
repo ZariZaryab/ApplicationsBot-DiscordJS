@@ -15,6 +15,28 @@ A simple discord JS bot (source code), mainly focused on easy applications witho
 
 > Go to Discord, copy channel id of any channel you want the bot to send applications (basically, applications will be saved there) and insert in `(config.json file)`
 
+## Setting up questions:
+Open up `questions.json` file and replace `Your question here` with a question for application
+You can add/remove questions...
+
+Let's have an example questions:
+```json
+{
+"Question": "Your first question",
+"Question": "Your second question"
+}
+```
+So, you can add a question by inserting new `"Question": "New Question"`
+And it should look like this
+```json
+{
+"Question": "Your first question",
+"Question": "Your second question",
+"Question": "New Question"
+}
+```
+## NOTE: ADD A COMMA `,` AFTER QUESTION CLOSING! LIKE IN EXAMPLES
+
 # Features:
 > Apply
 
