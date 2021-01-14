@@ -54,9 +54,9 @@ fs.readdir('./COMMANDS/', (err, files) => {
    /* BOOT STATS */
 
 client.on("ready", () => {
-  console.log(`[LunicBoot]: Booted ${client.user.tag}!`)
+  console.log(`[BOOT]: Booted client ${client.user.tag}!`)
   client.user.setStatus('online')
-   let statuses = [`applications you sent...`, `by Gazarino`]
+   let statuses = [`applications you sent...`, `with Gazarino`]
    setInterval(function() {
       let status = statuses[Math.floor(Math.random() * statuses.length)];
       client.user.setActivity(status, { type: "WATCHING" })
