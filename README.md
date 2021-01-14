@@ -19,7 +19,8 @@ Go to Discord, copy role id of any role you want (basically, users with this rol
 
 Go to Discord, copy channel id of any channel you want users to apply in (basically, you can have a record and no spam in other channels( and insert in "APPLY_ID" `(in config.json file)`
 
-> At last,
+> And then,
+
 Go to Discord, copy channel id of any channel you want the bot to send applications (basically, applications will be saved there) and insert in `(config.json file)`
 
 ## Setting up questions:
