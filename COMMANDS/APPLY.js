@@ -4,7 +4,7 @@ const q = require("../questions.json");
 
 module.exports.run = async (client, message, args) => {
   
-    function QuestionEmbed (contentIndex) {
+    function EachEmbed (contentIndex) {
         const dmEmb = new Discord.MessageEmbed()
                         .setTitle(contentIndex)
                         .setColor('RANDOM')
@@ -15,8 +15,6 @@ module.exports.run = async (client, message, args) => {
     
    const answers = [];
    const question = Object.values(q)
-    
-        if(message.channel.type == 'dm') return;
 
         const startedApp = new Discord.MessageEmbed()
          .setTitle("🔱 **Application Forwarded**")
@@ -37,7 +35,7 @@ module.exports.run = async (client, message, args) => {
 
 for(let index = 0; index < question.length; index++) {
   
-  await message.author.send(QuestionEmbed(question[index]));
+  await message.author.send(EachEmbed(question[index]));
         let answer = await appChannel.channel.awaitMessages(answer => answer.author.id != client.user.id,  {max: 1});
         answers[index] = (answer.map(answers => answers.content).join());
 }
