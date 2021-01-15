@@ -3,8 +3,16 @@ const config = require("../config.json");
 const q = require("../questions.json");
 
 module.exports.run = async (client, message, args) => {
-  
-    function EachEmbed (contentIndex) {
+
+     const applyErrChannel = new Discord.MessageEmbed()
+        .setTitle("🔒  **Access Denied** ")
+        .setAuthor(message.author.username, message.author.displayAvatarURL())
+        .setFooter("You can't apply in this channel! Contact staff for applications channel")
+        .setColor("RANDOM")
+
+if(message.channel.id !== config.APPLY_CHANNEL) return message.channel.send(applyErrChannel);
+    
+function EachEmbed (contentIndex) {
         const dmEmb = new Discord.MessageEmbed()
                         .setTitle(contentIndex)
                         .setColor('RANDOM')
