@@ -13,15 +13,15 @@ Open up `config.json` file and insert your bot token next to "TOKEN".
 
 > Now,
 
-Go to Discord, copy role id of any role you want (basically, users with this role can accept/reject) and insert in "REVIEWER_ROLE" `(in config.json file)`
+Go to Discord, copy role id of any role you want (basically, users with this role can accept/reject) and insert in "REVIEWER_ID" `(in config.json file)`
 
 > Similarly,
 
-Go to Discord, copy channel id of any channel you want users to apply in (basically, you can have a record and no spam in other channels( and insert in "APPLY_ID" `(in config.json file)`
+Go to Discord, copy channel id of any channel you want users to apply in (basically, you can have a record and no spam in other channels( and insert in "APPLY_CHANNEL" `(in config.json file)`
 
 > And then,
 
-Go to Discord, copy channel id of any channel you want the bot to send applications (basically, applications will be saved there) and insert in `(config.json file)`
+Go to Discord, copy channel id of any channel you want the bot to send applications (basically, applications will be saved there) and insert in "LOG_CHANNEL" `(in config.json file)`
 
 ## Setting up questions:
 Open up `questions.json` file and replace `Your question here` with a question for application
@@ -43,7 +43,7 @@ And it should look like this
 "Question": "New Question"
 }
 ```
-## NOTE: ADD A COMMA `,` AFTER QUESTION CLOSING! LIKE IN EXAMPLES
+## NOTE: ADD A COMMA `,` AFTER QUESTIONS (expect the last), LIKE IN EXAMPLES
 
 # Features:
 > Apply
