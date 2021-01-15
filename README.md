@@ -30,17 +30,17 @@ You can add/remove questions...
 Let's have an example questions:
 ```json
 {
-"Question": "Your first question",
-"Question": "Your second question"
+"Question 1": "Your first question",
+"Question 2": "Your second question"
 }
 ```
 So, you can add a question by inserting new `"Question": "New Question"`
 And it should look like this
 ```json
 {
-"Question": "Your first question",
-"Question": "Your second question",
-"Question": "New Question"
+"Question 1": "Your first question",
+"Question 2": "Your second question",
+"Question 3": "New Question"
 }
 ```
 ## NOTE: ADD A COMMA `,` AFTER QUESTIONS (expect the last), LIKE IN EXAMPLES
